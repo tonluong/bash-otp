@@ -13,6 +13,12 @@ This script supports both encrypted and plain-text token files, but my reccomend
 * OpenSSL
 * xclip (Linux)
 
+### macOS Setup
+
+```bash
+brew install oath-toolkit gawk
+```
+
 ## Description
 
 Set of bash shell scripts to generate OTP *value* from token using TOTP.
@@ -29,7 +35,7 @@ First ensure that there is a directory "tokenfiles" in the main dir where the sc
   
   1. Encrypt the file with the included shell script:
   ```bash
-  $ ./otp-lockfile.sh tokenfiles/tokenname
+  $ ./otp-lockfile tokenfiles/tokenname
   Password: (enter a good password)
   ```
   
@@ -39,9 +45,9 @@ First ensure that there is a directory "tokenfiles" in the main dir where the sc
   tokenname.enc
   ```
 
-1. Run otp.sh; will produce roughly the following output:
+1. Run otp; will produce roughly the following output:
   ```
-$ ./otp.sh tokenname
+$ ./otp tokenname
 Password:
 02: 123456
   ```
