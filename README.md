@@ -4,7 +4,7 @@ Command line 2FA. 2-Factor verification similar to Google Authenticator and Auth
 
 * TOTP (Time-based One-Time Password) using oathtool
 * Encrypt / Decrypt using OpenSSL
-* Copies to clipboard uisng `pbcopy` (macOS); `xclip` (Linux)
+* Copies to clipboard using `pbcopy` (macOS); `xclip` (Linux)
 * Supports both encrypted and plain-text token files
 
 
