@@ -19,8 +19,8 @@ if [ ! -f "${INPUT_FILE}" ]; then
     exit 1
 fi
 
-read -s -r -p "Password to lock file: " PASSWORD1
-read -s -r -p "Enter that password again: " PASSWORD2
+read -s -r -p "Password: " PASSWORD1
+read -s -r -p "Verify Password: " PASSWORD2
 
 if [[ "${PASSWORD1}" == "${PASSWORD2}" ]]; then
 
